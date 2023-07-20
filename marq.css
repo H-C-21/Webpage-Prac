@@ -1,0 +1,76 @@
+.marq-section{
+    background: linear-gradient(to bottom, #ffffff, #dff1e9);
+    padding: 0;
+    /* width: 80%; */
+    margin: 5% auto 0 auto;
+    width: 100%;
+}
+
+.marq-heading{
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    width: 90%;
+    margin: 0 auto 5% auto;
+    font-size: 2.3rem;
+}
+
+/* .heading-9{
+    color: #1adb80;
+    font-weight: 700; */
+/* } */
+
+.marq-number{
+    color: #1adb80;
+    font-weight: 700;
+}
+
+.marquees{
+    height: 9rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquees .slide-track-opposite {
+    animation: scrollOpposite 30s linear infinite alternate;
+    display: flex;
+    width: max-content;
+}
+
+.marquees .slide-track-rr {
+    animation: scroll 30s linear infinite alternate;
+    display: flex;
+    width: max-content;
+}
+
+.marquees .slide {
+    height: 112px;
+    width: 100%;
+    margin-right: 2rem;
+}
+.marquees img{
+  height: 90%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(calc(-200px * 10));
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scrollOpposite {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-230px * 10));
+    }
+  }
